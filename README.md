@@ -1,13 +1,17 @@
-# docker-swagger-cli
-Dockerized [swagger-cli](https://github.com/BigstickCarpet/swagger-cli), so no global npm module installation and explicit nodejs dependency
+# mvn-docker-swagger-cli
 
-# Example
+Dockerized swagger-cli with maven integration.
 
-Run via the convenient shell script:
+**Why**
 
-    ./swagger.sh bundle -o test.json test.yml
-  
-Or anywhere:
-  
-    docker run -it --rm -v ${PWD}:/var/app -w /var/app nktpro/swagger-cli ...
+This will help us to validate swagger json generated during maven compile.
+
+**Requisites**
+
+1. Maven
+2. Docker
+
+**Run using**
+
+mvn clean compile
 
