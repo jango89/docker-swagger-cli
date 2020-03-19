@@ -15,3 +15,8 @@ This will help us to validate swagger json generated during maven compile.
 
 mvn clean compile
 
+## Create Custom Docker Image
+
+docker build -f Dockerfile --tag swagger-cli .
+docker tag {new_tag_bumber_from_previous_command} {private_docker_hub}/swagger-cli:latest
+docker push {private_docker_hub}/swagger-cli
