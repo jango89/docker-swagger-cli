@@ -19,6 +19,6 @@ mvn clean compile
 
 docker build -f Dockerfile --tag swagger-cli .    
 
-docker tag {new_tag_bumber_from_previous_command} {private_docker_hub}/swagger-cli:latest   
+docker tag {new_tag_number_from_previous_command} {private_docker_hub}/swagger-cli:latest   
 
 docker push {private_docker_hub}/swagger-cli
